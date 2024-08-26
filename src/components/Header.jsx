@@ -5,20 +5,19 @@ const Header = () => {
 
   return (
     <header className="bg-gray-800 text-white">
-      <div className="container mx-auto flex justify-between items-center p-5">
-        <div className="text-2xl font-bold">My Portfolio</div>
-        <nav className="hidden md:flex space-x-4">
-          <a href="#home" className="hover:text-gray-400">
+      <div className="container mx-auto flex justify-between items-center p-5 md:p-8 lg:p-10">
+        <div className="text-2xl lg:text-[35px] font-bold">
+          Garret Hildebrandt
+        </div>
+        <nav className="hidden text-[20px] lg:text-[30px] md:flex space-x-4">
+          <a href="/Home" className="hover:text-gray-400">
             Home
           </a>
-          <a href="#about" className="hover:text-gray-400">
-            About
-          </a>
-          <a href="#projects" className="hover:text-gray-400">
+          <a href="/Portfolio" className="hover:text-gray-400">
             Projects
           </a>
-          <a href="#contact" className="hover:text-gray-400">
-            Contact
+          <a href="/Resume" className="hover:text-gray-400">
+            Resume
           </a>
         </nav>
         <div className="md:hidden">

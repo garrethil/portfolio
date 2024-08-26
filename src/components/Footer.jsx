@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <div className="bg-gray-800 p-6">
-      <ul className="flex justify-center space-x-6">
+      <ul className="flex justify-center  items-center space-x-6">
         <li>
           <a
             href="https://github.com/garrethil"

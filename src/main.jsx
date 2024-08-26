@@ -4,9 +4,8 @@ import "./index.css";
 import App from "./App.jsx";
 
 import Home from "./pages/Home.jsx";
-// import Portfolio from "./pages/Portfolio.jsx";
-// import Contact from "./pages/Contact.jsx";
-// import Resume from "./pages/Resume.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
+import Resume from "./pages/Resume.jsx";
 import Error from "./pages/Error.jsx";
 
 const router = createBrowserRouter([
@@ -19,22 +18,18 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
-      // {
-      //   path: "/Portfolio",
-      //   element: <Portfolio />,
-      // },
-      // {
-      //   path: "/Contact",
-      //   element: <Contact />,
-      // },
-      // {
-      //   path: "/Resume",
-      //   element: <Resume />,
-      // },
-      // {
-      //   path: "/About",
-      //   element: <About />,
-      // },
+      {
+        path: "/Portfolio",
+        element: <Portfolio />,
+      },
+      {
+        path: "/Resume",
+        element: <Resume />,
+      },
+      {
+        path: "/Home",
+        element: <Home />,
+      },
     ],
   },
 ]);
