@@ -13,6 +13,7 @@ export default function Portfolio() {
               desc={project.desc}
               repo={project.repo}
               link={project.link}
+              depl={project.depl}
             />
           </div>
         ))}

@@ -18,10 +18,30 @@ export default function Resume() {
         <h2 className="my-4 text-xl font-bold">Technical Skills</h2>
 
         <ul className="list-disc list-inside">
-          <li>Languages: HTML/CSS, JavaScript, SQL, MongoDB</li>
-          <li>Frameworks: Node, Express, Handlebars</li>
-          <li>Developer Tools: Github, MySQL</li>
-          <li>Libraries: jQuery, Bootstrap, Sequelize, React, Mongoose</li>
+          <li>
+            <span className="font-semibold underline mr-2">
+              Frontend Development:
+            </span>
+            HTML/CSS, JavaScript, jQuery, Bootstrap, Tailwind CSS, React
+          </li>
+          <li>
+            <span className="font-semibold underline mr-2">
+              {" "}
+              Backend Development:
+            </span>
+            JavaScript (Node), Express
+          </li>
+          <li>
+            <span className="font-semibold underline mr-2">
+              {" "}
+              Database Management:
+            </span>{" "}
+            MongoDB, MySQL, Sequelize, Mongoose
+          </li>
+          <li>
+            <span className="font-semibold underline mr-2">DevOps:</span>{" "}
+            Heroku, Netlify, Render
+          </li>
         </ul>
       </div>
     </div>

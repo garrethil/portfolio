@@ -4,20 +4,14 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-gray-800 text-white">
+    <header className="bg-primary text-primary-text font-sans">
       <div className="container mx-auto flex justify-between items-center p-5 md:p-8 lg:p-10">
         <div className="text-2xl lg:text-[35px] font-bold">
           Garret Hildebrandt
         </div>
         <nav className="hidden text-[20px] lg:text-[30px] md:flex space-x-4">
-          <a href="/Home" className="hover:text-gray-400">
-            Home
-          </a>
-          <a href="/Portfolio" className="hover:text-gray-400">
+          <a href="#projects" className="hover:text-gray-400">
             Projects
-          </a>
-          <a href="/Resume" className="hover:text-gray-400">
-            Resume
           </a>
         </nav>
         <div className="md:hidden">
@@ -44,17 +38,8 @@ const Header = () => {
       </div>
       {isOpen && (
         <nav className="md:hidden bg-gray-800 p-5">
-          <a href="#home" className="block py-2 hover:text-gray-400">
-            Home
-          </a>
-          <a href="#about" className="block py-2 hover:text-gray-400">
-            About
-          </a>
-          <a href="#projects" className="block py-2 hover:text-gray-400">
+          <a href="#projects" className="hover:text-gray-400">
             Projects
-          </a>
-          <a href="#contact" className="block py-2 hover:text-gray-400">
-            Contact
           </a>
         </nav>
       )}

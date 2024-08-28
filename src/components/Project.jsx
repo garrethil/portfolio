@@ -1,8 +1,33 @@
 import PropTypes from "prop-types";
 
-function Project({ title, image, alt, desc, repo, link }) {
+function Project({ title, image, alt, desc, repo, link, depl }) {
   return (
     <div className="project-card bg-white shadow-md rounded-lg p-4 relative group">
+      {/* Deployment Status */}
+      <div className="absolute top-2 right-2 text-sm font-bold flex items-center space-x-1">
+        {depl ? (
+          <span className="text-green-600 flex items-center">
+            Deployed
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4 ml-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+          </span>
+        ) : (
+          <span className="text-red-600">Local use only</span>
+        )}
+      </div>
+
       <h3 className="text-lg font-bold">{title}</h3>
       <div className="relative">
         <img
@@ -16,13 +41,14 @@ function Project({ title, image, alt, desc, repo, link }) {
               href={repo}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white"
+              className="text-white flex items-center justify-center w-12 h-12"
             >
               <svg
-                width="50"
-                height="48"
+                width="24"
+                height="24"
                 xmlns="http://www.w3.org/2000/svg"
-                className="fill-current text-white"
+                className="fill-current text-white w-full h-full"
+                viewBox="0 0 100 100"
               >
                 <path
                   fillRule="evenodd"
@@ -31,13 +57,15 @@ function Project({ title, image, alt, desc, repo, link }) {
                 />
               </svg>
             </a>
+            <div className="border-l border-white h-6"></div>{" "}
+            {/* Border between links */}
             <a
               href={link}
               target="_blank"
               rel="noopener noreferrer"
               className="text-white text-lg"
             >
-              Project Link
+              {depl ? "Project Link" : "Demo Video"}
             </a>
           </div>
         </div>
@@ -56,6 +84,7 @@ Project.propTypes = {
   desc: PropTypes.string.isRequired,
   repo: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
+  depl: PropTypes.bool, // Added prop type for depl
 };
 
 export default Project;

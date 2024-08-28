@@ -8,11 +8,14 @@ export default {
         1: "1px", // Ensure '1' is defined for 1px border width
       },
       colors: {
-        primary: "#635FC7",
-        // Add dark mode colors
-        darkPrimary: "#4A4E69",
-        darkBackground: "#22223B",
-        darkText: "#F2E9E4",
+        primary: {
+          DEFAULT: "#5F6F65", // Header and Footer Background
+          text: "#9CA986", // Header and Footer Text
+        },
+        content: {
+          DEFAULT: "#C9DABF", // Main Page Background
+          text: "#808D7C", // Main Content Text
+        },
       },
       fontFamily: {
         sans: ["Plus Jakarta Sans", "sans-serif"],
