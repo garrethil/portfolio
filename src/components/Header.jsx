@@ -6,8 +6,12 @@ const Header = () => {
   return (
     <header className="bg-primary text-primary-text font-sans">
       <div className="container mx-auto flex justify-between items-center p-5 md:p-8 lg:p-10">
-        <div className="text-2xl lg:text-[35px] font-bold">
-          Garret Hildebrandt
+        <div className="text-2xl lg:text-[35px] font-bold items-center justify-center">
+          Garret Hildebrandt{" "}
+          {/* Show "Full-Stack Developer" only on larger screens */}
+          <span className="hidden lg:inline font-semibold underline ml-3">
+            - Full-Stack Developer
+          </span>
         </div>
         <nav className="hidden text-[20px] lg:text-[30px] md:flex space-x-4">
           <a href="#projects" className="hover:text-gray-400">

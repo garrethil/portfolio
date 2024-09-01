@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 function Project({ title, image, alt, desc, repo, link, depl }) {
   return (
-    <div className="project-card bg-white shadow-md rounded-lg p-4 relative group">
+    <div className="project-card bg-white shadow-md rounded-lg p-4 relative group overflow-hidden">
       {/* Deployment Status */}
       <div className="absolute top-2 right-2 text-sm font-bold flex items-center space-x-1">
         {depl ? (
@@ -29,13 +29,16 @@ function Project({ title, image, alt, desc, repo, link, depl }) {
       </div>
 
       <h3 className="text-lg font-bold">{title}</h3>
-      <div className="relative">
+
+      {/* Image Container */}
+      <div className="relative overflow-hidden">
         <img
           src={image}
           alt={alt}
           className="w-full h-auto mt-2 rounded transition-transform duration-300 group-hover:scale-105"
         />
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        {/* Overlay */}
+        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-0 group-hover:opacity-70">
           <div className="flex items-center space-x-4">
             <a
               href={repo}
@@ -70,6 +73,8 @@ function Project({ title, image, alt, desc, repo, link, depl }) {
           </div>
         </div>
       </div>
+
+      {/* Description Section */}
       <div className="hidden-info mt-4">
         <p>{desc}</p>
       </div>
