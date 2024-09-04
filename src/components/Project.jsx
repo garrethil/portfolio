@@ -28,7 +28,7 @@ function Project({ title, image, alt, desc, repo, link, depl }) {
         )}
       </div>
 
-      <h3 className="text-lg font-bold">{title}</h3>
+      <h3 className="text-md sm:text-lg font-bold">{title}</h3>
 
       {/* Image Container */}
       <div className="relative overflow-hidden">

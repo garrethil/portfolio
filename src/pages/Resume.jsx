@@ -3,25 +3,10 @@ import { useState, useEffect } from "react";
 export default function Resume() {
   const resumePath = "/garretHildebrandt-2024.pdf";
   const [isPreviewVisible, setIsPreviewVisible] = useState(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const handleViewResume = () => {
     setIsPreviewVisible(!isPreviewVisible);
   };
-
-  // Check screen size on load and resize
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsSmallScreen(window.innerWidth < 640); // Tailwind 'sm' breakpoint
-    };
-
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-
-    return () => {
-      window.removeEventListener("resize", checkScreenSize);
-    };
-  }, []);
 
   return (
     <div className="container mx-auto p-4">
@@ -38,29 +23,13 @@ export default function Resume() {
       {/* Resume Preview */}
       {isPreviewVisible && (
         <div className="my-6">
-          {!isSmallScreen ? (
-            <embed
-              src={resumePath}
-              width="100%"
-              height="500px"
-              type="application/pdf"
-              className="max-w-full"
-            />
-          ) : (
-            <div className="bg-gray-200 p-4 rounded-lg">
-              <p className="text-sm text-center mb-2">
-                The resume preview is not available on small screens. Please
-                download it for viewing.
-              </p>
-              <a
-                href={resumePath}
-                download="garretHildebrandt-2024.pdf"
-                className="text-blue-500 underline"
-              >
-                Click here to download the PDF.
-              </a>
-            </div>
-          )}
+          <embed
+            src={resumePath}
+            width="100%"
+            height="500px"
+            type="application/pdf"
+            className="w-full h-auto md:h-96"
+          />
         </div>
       )}
 

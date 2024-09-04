@@ -18,7 +18,7 @@ const projectData = [
     depl: true,
   },
   {
-    title: "Where is The Weather?",
+    title: "Weather App",
     image: "project-images/weather.png",
     alt: "Weather app",
     desc: "openWeather API",
