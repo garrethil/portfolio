@@ -1,5 +1,5 @@
-import Resume from "./Resume";
-import Portfolio from "./Portfolio";
+import Resume from "../components/Resume";
+import Portfolio from "../components/Portfolio";
 function Home() {
   const headshot = "headshot.jpg";
 
