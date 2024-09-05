@@ -4,8 +4,6 @@ import "./index.css";
 import App from "./App.jsx";
 
 import Home from "./pages/Home.jsx";
-import Portfolio from "./pages/Portfolio.jsx";
-import Resume from "./pages/Resume.jsx";
 import Error from "./pages/Error.jsx";
 
 const router = createBrowserRouter([
@@ -16,18 +14,6 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
-      },
-      {
-        path: "/Portfolio",
-        element: <Portfolio />,
-      },
-      {
-        path: "/Resume",
-        element: <Resume />,
-      },
-      {
-        path: "/Home",
         element: <Home />,
       },
     ],

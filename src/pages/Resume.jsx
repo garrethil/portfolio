@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Resume() {
   const resumePath = "/garretHildebrandt-2024.pdf";
