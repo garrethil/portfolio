@@ -85,7 +85,7 @@ function Project({ title, image, alt, desc, repo, link, depl }) {
 Project.propTypes = {
   title: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
+  alt: PropTypes.string,
   desc: PropTypes.string.isRequired,
   repo: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
