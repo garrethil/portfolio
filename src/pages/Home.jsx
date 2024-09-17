@@ -19,10 +19,10 @@ function Home() {
 
           {/* Text content container */}
           <div className="flex flex-col items-center lg:items-start lg:flex-grow lg:w-2/3 border-content-text border-2 rounded-xl p-4">
-            <h2 className="mt-5 text-xl sm:text-2xl lg:text-3xl font-bold">
+            <h2 className=" text-xl sm:text-2xl lg:text-3xl font-bold">
               Garret Hildebrandt{" "}
             </h2>
-            <p className="text-sm sm:text-base lg:text-[20px] xl:text-[22px] lg:leading-[28px] xl:leading-[30px] mt-4 lg:mt-6">
+            <p className="text-sm sm:text-base lg:text-[20px] xl:text-[22px] lg:leading-[28px] xl:leading-[30px] lg:mt-6">
               Garret is a Full-Stack Web Developer that draws on creative
               elements from an education in music to provide a unique
               perspective in app development and solutions. He earned a
@@ -40,7 +40,7 @@ function Home() {
         <Resume />
       </div>
 
-      <h2 className="text-[25px] font-semibold pt-4">Projects</h2>
+      <h2 className="text-[25px] font-semibold pt-4 underline">Projects</h2>
       <div
         id="projects"
         className="w-full xl:w-[80%] flex justify-center items-center p-4"

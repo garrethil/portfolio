@@ -25,7 +25,7 @@ const Header = () => {
           <a
             href="#projects"
             onClick={(e) => handleScrollToSection(e, "projects")}
-            className="hover:text-gray-400"
+            className="hover:underline"
           >
             Projects
           </a>
@@ -57,7 +57,7 @@ const Header = () => {
           <a
             href="#projects"
             onClick={(e) => handleScrollToSection(e, "projects")}
-            className="hover:text-gray-400"
+            className="hover:border-dashed"
           >
             Projects
           </a>
