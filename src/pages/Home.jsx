@@ -23,13 +23,16 @@ function Home() {
             Garret Hildebrandt
           </h2>
           <p className="text-base sm:text-lg lg:text-xl leading-relaxed lg:leading-8">
-            Garret is a Full-Stack Web Developer that draws on creative elements
-            from an education in music to provide a unique perspective in app
-            development and solutions. He earned a Full-Stack Web Development
-            Certificate from the University of Toronto following a bachelor's of
-            music from UofT. Passionate problem solver and collaborator seeking
-            a fast-paced environment for continued learning and growth as a web
-            developer.
+            Garret is a Junior Full-Stack Web Developer who blends creativity
+            from a background in music with technical expertise to deliver
+            innovative solutions in app development. Garret holds a Full-Stack
+            Web Development Certificate from the University of Toronto, building
+            on his Bachelor of Music from UofT to bring creativity and
+            innovation to his development process. He is passionate about
+            learning and collaboration, with a growing interest in cloud
+            computing, particularly specializing in AWS. Garret is eager to
+            contribute to a fast-paced, dynamic environment where he can
+            continue to expand his skills and expertise as a web developer.
           </p>
         </div>
       </div>
