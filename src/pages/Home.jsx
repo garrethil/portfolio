@@ -19,7 +19,7 @@ function Home() {
 
         {/* Text content container */}
         <div className="flex flex-col items-center lg:items-start lg:flex-grow lg:w-2/3 rounded-xl p-4 sm:p-6 lg:p-8 bg-content text-content-text">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4">
+          <h2 className="text-orange-600 text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4">
             Garret Hildebrandt
           </h2>
           <p className="text-sm sm:text-base lg:text-lg leading-relaxed lg:leading-7">

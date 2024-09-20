@@ -11,7 +11,7 @@ export default function Resume() {
           </h2>
           <ul className="list-none text-sm sm:text-base md:text-lg text-left space-y-3">
             <li>
-              <span className="font-semibold underline mr-2 block sm:inline">
+              <span className="text-orange-600 font-semibold underline mr-2 block sm:inline">
                 Frontend Development:
               </span>
               <span className="block sm:inline">
@@ -19,7 +19,7 @@ export default function Resume() {
               </span>
             </li>
             <li>
-              <span className="font-semibold underline mr-2 block sm:inline">
+              <span className="text-orange-600 font-semibold underline mr-2 block sm:inline">
                 Backend Development:
               </span>
               <span className="block sm:inline">
@@ -27,7 +27,7 @@ export default function Resume() {
               </span>
             </li>
             <li>
-              <span className="font-semibold underline mr-2 block sm:inline">
+              <span className="text-orange-600 font-semibold underline mr-2 block sm:inline">
                 Database Management:
               </span>
               <span className="block sm:inline">
@@ -35,7 +35,7 @@ export default function Resume() {
               </span>
             </li>
             <li>
-              <span className="font-semibold underline mr-2 block sm:inline">
+              <span className="text-orange-600 font-semibold underline mr-2 block sm:inline">
                 DevOps:
               </span>
               <span className="block sm:inline">Heroku, Netlify, Render</span>
