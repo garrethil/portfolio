@@ -58,7 +58,7 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-      <div className="text-center text-orange-600 mt-4 text-sm md:text-base lg:text-lg">
+      <div className="text-center text-primary-text mt-4 text-sm md:text-base lg:text-lg">
         &copy; {new Date().getFullYear()} Garret Hildebrandt. All rights
         reserved.
       </div>

@@ -6,12 +6,12 @@ export default function Resume() {
       {/* Technical Skills Section */}
       <div className="my-6 flex flex-col items-center justify-center">
         <div className="text-center">
-          <h2 className="my-4 text-[22px] sm:text-[25px] font-semibold underline">
+          <h2 className="font-serif text-orange-600 my-4 text-[22px] sm:text-[25px] font-semibold underline">
             Technical Skills
           </h2>
-          <ul className="list-none text-sm sm:text-base md:text-lg text-left space-y-3">
+          <ul className="list-none text-base sm:text-lg md:text-xl text-left space-y-3">
             <li>
-              <span className="text-orange-600 font-semibold underline mr-2 block sm:inline">
+              <span className="font-semibold underline mr-2 block sm:inline">
                 Frontend Development:
               </span>
               <span className="block sm:inline">
@@ -19,7 +19,7 @@ export default function Resume() {
               </span>
             </li>
             <li>
-              <span className="text-orange-600 font-semibold underline mr-2 block sm:inline">
+              <span className="font-semibold underline mr-2 block sm:inline">
                 Backend Development:
               </span>
               <span className="block sm:inline">
@@ -27,7 +27,7 @@ export default function Resume() {
               </span>
             </li>
             <li>
-              <span className="text-orange-600 font-semibold underline mr-2 block sm:inline">
+              <span className="font-semibold underline mr-2 block sm:inline">
                 Database Management:
               </span>
               <span className="block sm:inline">
@@ -35,7 +35,7 @@ export default function Resume() {
               </span>
             </li>
             <li>
-              <span className="text-orange-600 font-semibold underline mr-2 block sm:inline">
+              <span className="font-semibold underline mr-2 block sm:inline">
                 DevOps:
               </span>
               <span className="block sm:inline">Heroku, Netlify, Render</span>
@@ -49,7 +49,7 @@ export default function Resume() {
         <a
           href={resumePath}
           download
-          className="bg-primary text-primary-text hover:bg-primary-text hover:text-primary py-2 px-4 rounded w-full md:w-auto text-center"
+          className="bg-primary text-base sm:text-lg md:text-xl text-primary-text hover:bg-primary-text hover:text-primary py-2 px-4 rounded w-full md:w-auto text-center"
         >
           Download My Resume
         </a>

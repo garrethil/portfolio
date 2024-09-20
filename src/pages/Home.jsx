@@ -19,7 +19,7 @@ function Home() {
 
         {/* Text content container */}
         <div className="flex flex-col items-center lg:items-start lg:flex-grow lg:w-2/3 rounded-xl p-4 sm:p-6 lg:p-8 bg-content text-content-text">
-          <h2 className="text-orange-600 text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4">
+          <h2 className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4">
             Garret Hildebrandt
           </h2>
           <p className="text-sm sm:text-base lg:text-lg leading-relaxed lg:leading-7">
@@ -44,7 +44,7 @@ function Home() {
       {/* Projects Section */}
       <h2
         id="projects"
-        className="text-xl sm:text-2xl lg:text-3xl font-semibold underline text-center pt-4"
+        className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-semibold underline text-center pt-4"
       >
         Projects
       </h2>
@@ -57,10 +57,12 @@ function Home() {
         id="contact"
         className="w-full lg:w-[80%] h-[400px] sm:h-[450px] lg:h-[500px] max-w-screen-lg flex flex-col items-center justify-center py-6 sm:py-8 lg:py-10 my-6 sm:my-8 lg:my-10"
       >
-        <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-2 sm:mb-4">
+        <h2 className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-semibold mb-2 sm:mb-4">
           Contact Me
         </h2>
-        <p className="text-base sm:text-lg lg:text-xl">Email me at:</p>
+        <p className="text-base text-base sm:text-lg md:text-xl">
+          Email me at:
+        </p>
         <a
           href="mailto:garrethildebrandt@gmail.com"
           className="text-orange-600 no-underline hover:underline text-base sm:text-lg lg:text-xl"

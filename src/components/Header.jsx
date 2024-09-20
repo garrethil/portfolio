@@ -13,16 +13,16 @@ const Header = () => {
   };
 
   return (
+    // Apply font-sans to the header or globally
     <header className="bg-primary text-primary-text font-sans relative">
       <div className="container mx-auto flex justify-between items-center p-5 md:p-8 lg:p-10">
-        <div className="text-2xl lg:text-[35px] font-bold items-center justify-center">
-          Garret Hildebrandt{" "}
-          <span className="hidden lg:inline font-semibold underline ml-3">
+        <div className="font-serif text-2xl lg:text-[35px] items-center justify-center">
+          Garret Hildebrandt {/* Apply font-serif only to this span */}
+          <span className="text-orange-600 hidden lg:inline font-semibold underline ml-3">
             - Full-Stack Developer
           </span>
         </div>
         <nav className="hidden text-[20px] lg:text-[30px] md:flex space-x-4">
-          {/* Use onClick handler to prevent default and manually scroll */}
           <a
             href="#projects"
             onClick={(e) => handleScrollToSection(e, "projects")}

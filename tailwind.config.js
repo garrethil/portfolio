@@ -18,7 +18,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Plus Jakarta Sans", "sans-serif"],
+        sans: ["Exo 2", "sans-serif"],
+        serif: ["Gowun Batang", "sans-serif"],
       },
     },
   },
