@@ -9,10 +9,11 @@ const Header = () => {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" }); // Scroll to the section smoothly
     }
+    setIsOpen(false); // Close the mobile menu after navigating
   };
 
   return (
-    <header className="bg-primary text-primary-text font-sans">
+    <header className="bg-primary text-primary-text font-sans relative">
       <div className="container mx-auto flex justify-between items-center p-5 md:p-8 lg:p-10">
         <div className="text-2xl lg:text-[35px] font-bold items-center justify-center">
           Garret Hildebrandt{" "}
@@ -25,9 +26,16 @@ const Header = () => {
           <a
             href="#projects"
             onClick={(e) => handleScrollToSection(e, "projects")}
-            className="hover:underline"
+            className="hover:underline hover:cursor-pointer"
           >
             Projects
+          </a>
+          <a
+            href="#contact"
+            onClick={(e) => handleScrollToSection(e, "contact")}
+            className="hover:underline hover:cursor-pointer"
+          >
+            Contact
           </a>
         </nav>
         <div className="md:hidden">
@@ -53,13 +61,20 @@ const Header = () => {
         </div>
       </div>
       {isOpen && (
-        <nav className="md:hidden bg-gray-800 p-5">
+        <nav className="md:hidden bg-gray-800 p-5 space-y-4 absolute top-full left-0 w-full z-20">
           <a
             href="#projects"
             onClick={(e) => handleScrollToSection(e, "projects")}
-            className="hover:border-dashed"
+            className="block text-white hover:border-dashed cursor-pointer"
           >
             Projects
+          </a>
+          <a
+            href="#contact"
+            onClick={(e) => handleScrollToSection(e, "contact")}
+            className="block text-white hover:border-dashed cursor-pointer"
+          >
+            Contact
           </a>
         </nav>
       )}
