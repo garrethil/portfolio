@@ -61,18 +61,18 @@ const Header = () => {
         </div>
       </div>
       {isOpen && (
-        <nav className="md:hidden bg-gray-800 p-5 space-y-4 absolute top-full left-0 w-full z-20">
+        <nav className="md:hidden bg-primary text-primary-text p-5 space-y-4 absolute top-full left-0 w-full z-20">
           <a
             href="#projects"
             onClick={(e) => handleScrollToSection(e, "projects")}
-            className="block text-white hover:border-dashed cursor-pointer"
+            className="block hover:border-dashed cursor-pointer"
           >
             Projects
           </a>
           <a
             href="#contact"
             onClick={(e) => handleScrollToSection(e, "contact")}
-            className="block text-white hover:border-dashed cursor-pointer"
+            className="block hover:border-dashed cursor-pointer"
           >
             Contact
           </a>

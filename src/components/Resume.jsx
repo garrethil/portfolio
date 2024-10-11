@@ -49,7 +49,7 @@ export default function Resume() {
         <a
           href={resumePath}
           download
-          className="bg-primary text-base sm:text-lg md:text-xl text-primary-text hover:bg-primary-text hover:text-primary py-2 px-4 rounded w-full md:w-auto text-center"
+          className="bg-primary text-base sm:text-lg md:text-xl text-primary-text hover:bg-orange-700 transition duration-300 py-2 px-4 rounded w-full md:w-auto text-center"
         >
           Download My Resume
         </a>

@@ -13,7 +13,7 @@ const projectData = [
     image: "project-images/Render.png",
     alt: "Render file performance webpage",
     desc: "MERN, Youtube Data API, Sole Developer",
-    repo: "https://github.com/garrethil/renderFile",
+    repo: "https://github.com/garrethil/render-file",
     link: "https://www.renderfile.com/",
     depl: true,
   },

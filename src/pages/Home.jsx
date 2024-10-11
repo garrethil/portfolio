@@ -1,40 +1,65 @@
+import { useState } from "react";
 import Resume from "../components/Resume";
 import Portfolio from "../components/Portfolio";
 
 function Home() {
   const headshot = "headshot.jpg";
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => setIsModalOpen(true);
+  const handleCloseModal = () => setIsModalOpen(false);
 
   return (
     <div className="w-full flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 lg:px-10 space-y-8 sm:space-y-10 lg:space-y-12">
-      {/* Top Section (Image and Bio) */}
-      <div className="w-full lg:w-[80%] xl:w-[75%] max-w-screen-lg mx-auto flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left space-y-6 sm:space-y-8 lg:space-y-0 lg:space-x-6 sm:space-x-8 lg:space-x-10 pt-4 sm:pt-5">
-        {/* Image container */}
-        <div className="flex-shrink-0 relative">
-          <img
-            src={headshot}
-            alt="Profile Picture"
-            className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] rounded-full object-cover shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
-          />
-        </div>
+      {/* Image container */}
+      <img
+        src={headshot}
+        alt="Profile Picture"
+        className="w-full lg:w-[80%] max-w-lg h-auto rounded-full object-cover shadow-lg my-4"
+      />
+      {/* Title */}
+      <h2 className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
+        Garret Hildebrandt
+      </h2>
+      {/* About Me Button */}
+      <button
+        className="bg-primary text-white px-4 py-2 rounded-md hover:bg-orange-700 transition duration-300"
+        onClick={handleOpenModal}
+      >
+        About Me
+      </button>
 
-        {/* Text content container */}
-        <div className="flex flex-col items-center lg:items-start lg:flex-grow lg:w-2/3 rounded-xl p-4 sm:p-6 lg:p-8 bg-content text-content-text">
-          <h2 className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-bold mb-2 sm:mb-4">
-            Garret Hildebrandt
-          </h2>
-          <p className="text-sm sm:text-base lg:text-lg leading-relaxed lg:leading-7">
-            I'm a Junior Full-Stack Developer actively pursuing my first paid
-            role in the tech industry. I earned a Full-Stack Web Development
-            Certificate from the University of Toronto, building on my Bachelor
-            of Music from UofT to approach development with a fresh perspective
-            and a focus on industry standards. I am passionate about learning,
-            collaboration, and have a growing interest in cloud computing and
-            scalable systems. Eager to contribute to a fast-paced, dynamic
-            environment, where I can continue to expand my skills and expertise
-            as a Full-Stack Developer.
-          </p>
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+          <div className="bg-white p-6 rounded-lg w-full max-w-lg mx-auto relative">
+            <button
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+              onClick={handleCloseModal}
+            >
+              ✕
+            </button>
+            <div className="flex flex-col items-center text-center">
+              {/* Bio Content */}
+              <h2 className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
+                Garret Hildebrandt
+              </h2>
+              <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
+                I'm a Junior Full-Stack Developer actively pursuing my first
+                paid role in the tech industry. I earned a Full-Stack Web
+                Development Certificate from the University of Toronto, building
+                on my Bachelor of Music from UofT to approach development with a
+                fresh perspective and a focus on industry standards. I am
+                passionate about learning, collaboration, and have a growing
+                interest in cloud computing and scalable systems. Eager to
+                contribute to a fast-paced, dynamic environment, where I can
+                continue to expand my skills and expertise as a Full-Stack
+                Developer.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Resume Section */}
       <div className="w-full lg:w-[80%] max-w-screen-lg flex justify-center items-center">

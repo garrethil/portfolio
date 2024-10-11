@@ -9,12 +9,15 @@ export default {
       },
       colors: {
         primary: {
-          DEFAULT: "#5F6F65", // Header and Footer Background
-          text: "#9CA986", // Header and Footer Text
+          DEFAULT: "#1C1C1C", // Dark Header and Footer Background for strong contrast
+          text: "#F5F5F5", // Light Header and Footer Text for maximum clarity
         },
         content: {
-          DEFAULT: "#C9DABF", // Main Page Background
-          text: "#808D7C", // Main Content Text
+          DEFAULT: "#F0F0F0", // Light Gray Main Page Background for minimal color distraction
+          text: "#333333", // Dark Gray Main Content Text for excellent readability
+        },
+        highlight: {
+          DEFAULT: "#FFD700", // Gold color for highlighted elements
         },
       },
       fontFamily: {
