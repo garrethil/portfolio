@@ -10,7 +10,7 @@ function Home() {
   const handleCloseModal = () => setIsModalOpen(false);
 
   return (
-    <div className="w-full flex flex-col  items-center justify-center px-4 sm:px-6 md:px-8 lg:px-10 space-y-8 sm:space-y-10 lg:space-y-12">
+    <div className="w-full flex flex-col  items-center justify-center px-4 sm:px-6 md:px-8 lg:px-10">
       {/* Image container */}
       <img
         src={headshot}
