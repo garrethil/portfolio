@@ -1,5 +1,5 @@
 export default function Resume() {
-  const resumePath = "/garretHildebrandt-2024.pdf";
+  const resumePath = "/garretHildebrandt-2024-fall.pdf";
 
   return (
     <div className="container mx-auto p-4 my-5">
