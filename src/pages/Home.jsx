@@ -40,7 +40,7 @@ function Home() {
             >
               ✕
             </button>
-            <div className="flex flex-col items-center text-center">
+            <div className="flex flex-col items-center text-start">
               {/* Bio Content */}
               <h2 className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
                 Garret Hildebrandt
