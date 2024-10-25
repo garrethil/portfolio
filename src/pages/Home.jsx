@@ -18,7 +18,7 @@ function Home() {
         className="w-full lg:w-[80%] max-w-lg h-auto rounded-full object-cover shadow-lg my-4"
       />
       {/* Title */}
-      <h2 className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
+      <h2 className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-bold py-3 mb-4">
         Garret Hildebrandt
       </h2>
       {/* About Me Button */}
@@ -70,7 +70,7 @@ function Home() {
       {/* Projects Section */}
       <h2
         id="projects"
-        className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-semibold underline text-center pt-4"
+        className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-semibold text-center pt-4"
       >
         Projects
       </h2>

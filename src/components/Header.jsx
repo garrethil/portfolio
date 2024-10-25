@@ -18,7 +18,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center p-5 md:p-8 lg:p-10">
         <div className="font-serif text-2xl lg:text-[35px] items-center justify-center">
           Garret Hildebrandt {/* Apply font-serif only to this span */}
-          <span className="text-orange-600 hidden lg:inline font-semibold underline ml-3">
+          <span className="text-orange-600 hidden lg:inline font-semibold ml-3">
             - Full-Stack Developer
           </span>
         </div>

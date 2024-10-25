@@ -6,7 +6,7 @@ function Project({ title, image, alt, desc, repo, link, depl }) {
       {/* Deployment Status */}
       <div className="absolute top-2 right-2 text-sm font-bold flex items-center space-x-1">
         {depl ? (
-          <span className="text-green-600 flex items-center">
+          <span className="text-green-700 flex items-center">
             Deployed
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ function Project({ title, image, alt, desc, repo, link, depl }) {
             </svg>
           </span>
         ) : (
-          <span className="text-red-600">Local use only</span>
+          <span className="text-red-700">Local use only</span>
         )}
       </div>
 

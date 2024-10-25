@@ -64,8 +64,7 @@ export default function Footer() {
         </li>
       </ul>
       <div className="text-center text-primary-text mt-4 text-sm md:text-base lg:text-lg">
-        &copy; {new Date().getFullYear()} Garret Hildebrandt. All rights
-        reserved.
+        &copy; {new Date().getFullYear()} Garret Hildebrandt.
       </div>
     </div>
   );

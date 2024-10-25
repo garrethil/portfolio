@@ -6,7 +6,7 @@ export default function Resume() {
       {/* Technical Skills Section */}
       <div className="my-6 flex flex-col items-center justify-center">
         <div className="text-center">
-          <h2 className="font-serif text-orange-600 my-4 text-[22px] sm:text-[25px] font-semibold underline">
+          <h2 className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-semibold text-center p-4 mb-5">
             Technical Skills
           </h2>
           <ul className="list-none text-base sm:text-lg md:text-xl text-left space-y-3">
@@ -49,7 +49,7 @@ export default function Resume() {
         <a
           href={resumePath}
           download
-          className="bg-primary text-base sm:text-lg md:text-xl text-primary-text hover:bg-orange-700 transition duration-300 py-2 px-4 rounded w-full md:w-auto text-center"
+          className="bg-primary text-base sm:text-lg md:text-xl text-primary-text hover:bg-orange-700 transition duration-300 py-2 my-5 px-4 rounded w-full md:w-auto text-center"
           name="resume download"
         >
           Download My Resume
