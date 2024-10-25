@@ -91,7 +91,7 @@ function Home() {
         </p>
         <a
           href="mailto:garrethildebrandt@gmail.com"
-          className="text-orange-600 no-underline hover:underline text-base sm:text-lg lg:text-xl"
+          className="underline hover:text-orange-600 transition duration-300 text-base sm:text-lg lg:text-xl"
         >
           garrethildebrandt@gmail.com
         </a>
