@@ -8,6 +8,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-gray-400 transition-colors duration-300"
+            name="github profile"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -25,6 +26,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-gray-400 transition-colors duration-300"
+            name="linkedin profile"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -42,6 +44,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="text-white hover:text-gray-400 transition-colors duration-300"
+            name="stackoverflow profile"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

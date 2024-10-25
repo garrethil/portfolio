@@ -23,8 +23,9 @@ function Home() {
       </h2>
       {/* About Me Button */}
       <button
-        className="bg-primary text-white px-4 py-2 rounded-md hover:bg-orange-700 transition duration-300"
+        className="bg-primary text-base sm:text-lg md:text-xl text-primary-text hover:bg-orange-700 transition duration-300 py-2 px-4 rounded w-full md:w-auto text-center"
         onClick={handleOpenModal}
+        name="open bio"
       >
         About Me
       </button>
