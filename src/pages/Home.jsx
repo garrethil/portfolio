@@ -3,7 +3,7 @@ import Resume from "../components/Resume";
 import Portfolio from "../components/Portfolio";
 
 function Home() {
-  const headshot = "headshot.jpg";
+  const headshot = "headshot.webp";
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = () => setIsModalOpen(true);
