@@ -5,9 +5,7 @@ import {
   FaReact,
   FaNodeJs,
   FaBootstrap,
-  FaDatabase,
   FaGitAlt,
-  FaAws,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
