@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function Project({ title, image, alt, desc, repo, link, depl }) {
+function Project({ title, image, alt, desc, tech, repo, link, depl }) {
   return (
     <div className="project-card bg-white shadow-md rounded-lg p-4 relative group overflow-hidden">
       {/* Deployment Status */}
@@ -27,16 +27,23 @@ function Project({ title, image, alt, desc, repo, link, depl }) {
           <span className="text-red-700">Local use only</span>
         )}
       </div>
-
+      {/* need to make responsive mobile card classes */}
       <h3 className="text-md sm:text-lg font-bold">{title}</h3>
+      <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <p className="text-white text-center px-4">{desc}</p>
+      </div>
 
-      {/* Image Container (Hidden on small screens) */}
+      {/* Image Container with Hover Effect */}
       <div className="relative overflow-hidden hidden sm:block">
         <img
           src={image}
           alt={alt}
           className="w-full h-auto mt-2 rounded transition-transform duration-300 group-hover:scale-105"
         />
+        {/* Description Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          <p className="text-white text-center px-4">{desc}</p>
+        </div>
       </div>
 
       {/* Hyperlinks (Always visible) */}
@@ -62,7 +69,7 @@ function Project({ title, image, alt, desc, repo, link, depl }) {
 
       {/* Description Section */}
       <div className="mt-4">
-        <p>{desc}</p>
+        <p>{tech}</p>
       </div>
     </div>
   );
@@ -73,9 +80,10 @@ Project.propTypes = {
   image: PropTypes.string.isRequired,
   alt: PropTypes.string,
   desc: PropTypes.string.isRequired,
+  tech: PropTypes.string.isRequired,
   repo: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
-  depl: PropTypes.bool, // Added prop type for depl
+  depl: PropTypes.bool,
 };
 
 export default Project;
