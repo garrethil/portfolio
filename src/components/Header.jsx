@@ -42,6 +42,7 @@ const Header = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="focus:outline-none"
+            name="navbar"
           >
             <svg
               className="w-6 h-6"
