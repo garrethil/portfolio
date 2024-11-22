@@ -50,7 +50,7 @@ function Home() {
                 position. I earned a Full-Stack Web Development Certificate and
                 a Bachelor of Music from the University of Toronto, bringing a
                 unique perspective to development with a focus on industry
-                standards. My five years as a freelance musician taught me
+                standards. My five years as a freelance jazz musician taught me
                 spontaneity, creativity, and the ability to think on my
                 feet—skills that now empower my problem-solving and adaptability
                 in tech. I am passionate about continuous learning,
