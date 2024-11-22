@@ -41,12 +41,13 @@ function Project({ title, image, alt, desc, tech, repo, link, depl }) {
           className="w-full h-auto mt-2 rounded transition-transform duration-300 group-hover:scale-105"
         />
         {/* Description Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        <div className="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
           <p className="text-white text-center px-4">{desc}</p>
         </div>
       </div>
-
-      {/* Hyperlinks (Always visible) */}
+      <div className="mt-4">
+        <p>{tech}</p>
+      </div>
       <div className="mt-2 flex items-center space-x-4">
         <a
           href={repo}
@@ -67,9 +68,8 @@ function Project({ title, image, alt, desc, tech, repo, link, depl }) {
         </a>
       </div>
 
-      {/* Description Section */}
-      <div className="mt-4">
-        <p>{tech}</p>
+      <div className="mt-4 sm:hidden block">
+        <p>{desc}</p>
       </div>
     </div>
   );
