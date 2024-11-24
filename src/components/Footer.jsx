@@ -40,31 +40,6 @@ export default function Footer() {
             </svg>
           </a>
         </li>
-        <li>
-          <a
-            href="https://stackoverflow.com/users/24335262/garret-hildebrandt"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-gray-400 transition-colors duration-300"
-            name="stackoverflow profile"
-            aria-label="view stackoverflow profile"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14"
-              viewBox="-10.965 -21.65 95.03 129.9"
-            >
-              <path
-                d="M61.8 78.9V55.7h7.7v30.9H0V55.7h7.7v23.2z"
-                fill="#bcbbbb"
-              />
-              <path
-                d="M16.2 53.5L54 61.4l1.6-7.6-37.8-7.9zm5-18l35 16.3 3.2-7-35-16.4zm9.7-17.2L60.6 43l4.9-5.9-29.7-24.7zM50.1 0l-6.2 4.6 23 31 6.2-4.6zM15.4 71.1H54v-7.7H15.4z"
-                fill="#f48023"
-              />
-            </svg>
-          </a>
-        </li>
       </ul>
       <div className="text-center text-primary-text mt-4 text-sm md:text-base lg:text-lg">
         &copy; {new Date().getFullYear()} Garret Hildebrandt.
