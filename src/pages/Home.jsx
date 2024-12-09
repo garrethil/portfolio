@@ -46,8 +46,8 @@ function Home() {
                 Garret Hildebrandt
               </h2>
               <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
-                I'm a Full-Stack Developer actively pursuing my first full-time
-                position. I earned a Full-Stack Web Development Certificate and
+                I'm a Full-Stack Developer actively pursuing all types of
+                positions. I earned a Full-Stack Web Development Certificate and
                 a Bachelor of Music from the University of Toronto, bringing a
                 unique perspective to development with a focus on industry
                 standards. My five years as a freelance jazz musician taught me

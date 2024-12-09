@@ -7,7 +7,7 @@ export default function Footer() {
             href="https://github.com/garrethil"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-gray-400 transition-colors duration-300"
+            className="text-orange-700 hover:text-orange-700 transition-colors duration-300"
             name="github profile"
             aria-label="view github profile"
           >
