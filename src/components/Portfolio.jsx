@@ -1,12 +1,38 @@
+import { useState } from "react";
 import projectData from "../assets/data";
 import Project from "../components/Project";
 
 export default function Portfolio() {
+  const [filter, setFilter] = useState("All");
+
+  // Function to filter projects based on the selected filter
+  const filteredProjects =
+    filter === "All"
+      ? projectData
+      : projectData.filter((project) => project.type === filter);
+
   return (
     <div className="container mx-auto p-4">
+      {/* Filter Section */}
+      <div className="mb-6 flex justify-center">
+        {["All", "Full Stack", "Frontend", "Backend"].map((category) => (
+          <button
+            key={category}
+            className={`px-4 py-2 mx-2 rounded-lg ${
+              filter === category
+                ? "bg-orange-600 text-white"
+                : "bg-gray-200 text-gray-800"
+            } hover:bg-orange-500`}
+            onClick={() => setFilter(category)}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+
       {/* Projects Section */}
-      <div className="flex flex-wrap -mx-2">
-        {projectData.map((project, index) => (
+      <div className="flex flex-wrap justify-center mx-2">
+        {filteredProjects.map((project, index) => (
           <div className="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4" key={index}>
             <Project
               image={project.image}

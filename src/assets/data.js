@@ -8,6 +8,7 @@ const projectData = [
     repo: "https://github.com/topcowmoo/areca-vestiaria",
     link: "https://areca-vestiaria-test.onrender.com/",
     depl: true,
+    type: "Frontend",
   },
   {
     title: "Render File",
@@ -18,6 +19,7 @@ const projectData = [
     repo: "https://github.com/garrethil/render-file",
     link: "https://www.renderfile.com/",
     depl: true,
+    type: "Full Stack",
   },
   {
     title: "Meal Map",
@@ -28,6 +30,7 @@ const projectData = [
     repo: "https://github.com/Jason897571/Meal-Map",
     link: "https://meal-map.onrender.com/",
     depl: true,
+    type: "Full Stack",
   },
   {
     title: "Weather App",
@@ -38,6 +41,7 @@ const projectData = [
     repo: "https://github.com/garrethil/wheresTheWeather",
     link: "https://garrethil.github.io/wheresTheWeather/",
     depl: true,
+    type: "Full Stack",
   },
   {
     title: "Social Network API",
@@ -48,6 +52,7 @@ const projectData = [
     repo: "https://github.com/garrethil/SN-API?tab=readme-ov-file",
     link: "https://drive.google.com/file/d/1Dw2tO6ijhbl1MsZ1AAdijnUMkAqlsB7g/view",
     depl: false,
+    type: "Backend",
   },
   {
     title: "Ecommerce Backend",
@@ -58,6 +63,7 @@ const projectData = [
     repo: "https://github.com/garrethil/ecommBackEnd",
     link: "https://drive.google.com/file/d/1eP9Ap23-6LexJnBa5eYURnFnKmf5K0il/view",
     depl: false,
+    type: "Backend",
   },
 ];
 
