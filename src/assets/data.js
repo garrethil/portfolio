@@ -22,6 +22,17 @@ const projectData = [
     type: "Full Stack",
   },
   {
+    title: "Awards Page",
+    image: "project-images/randoAwards.png",
+    alt: "A display of company holiday award winners",
+    tech: "React app, Tailwind CSS, PS Designs",
+    desc: "A single page app displaying company award winners. Professional Photoshop design recreated in React with Tailwind. ",
+    repo: "https://github.com/garrethil/CSawards",
+    link: "https://randoawards.netlify.app/",
+    depl: true,
+    type: "Frontend",
+  },
+  {
     title: "Meal Map",
     image: "project-images/mealMap.png",
     alt: "Reastarant Finder App",
