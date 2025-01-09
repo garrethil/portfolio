@@ -17,7 +17,7 @@ import {
 } from "react-icons/si";
 
 export default function Resume() {
-  const resumePath = "/garretHildebrandt-2024-fall.pdf";
+  const resumePath = "/garret_hildebrandt.2025.pdf";
 
   return (
     <div className="container mx-auto p-4 my-5">
@@ -75,7 +75,9 @@ export default function Resume() {
               <span className="font-semibold underline mr-2 block sm:inline">
                 DevOps:
               </span>
-              <span className="block sm:inline">Heroku, Netlify, Render</span>
+              <span className="block sm:inline">
+                AWS, Heroku, Netlify, Render
+              </span>
             </li>
           </ul>
         </div>

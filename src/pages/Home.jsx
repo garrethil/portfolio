@@ -38,7 +38,7 @@ function Home() {
         >
           <div
             className="bg-white p-6 rounded-lg w-full max-w-lg mx-auto relative"
-            onClick={(e) => e.stopPropagation()} // Prevent click from propagating to overlay
+            onClick={(e) => e.stopPropagation()}
           >
             <button
               className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
@@ -52,18 +52,21 @@ function Home() {
                 Garret Hildebrandt
               </h2>
               <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
-                I'm a Full-Stack Developer actively pursuing all types of
-                positions. I earned a Full-Stack Web Development Certificate and
-                a Bachelor of Music from the University of Toronto, bringing a
-                unique perspective to development with a focus on industry
-                standards. My five years as a freelance jazz musician taught me
-                spontaneity, creativity, and the ability to think on my
-                feet—skills that now empower my problem-solving and adaptability
-                in tech. I am passionate about continuous learning,
-                collaboration, and have a growing interest in cloud computing
-                and scalable systems. I’m eager to contribute to a fast-paced,
-                dynamic environment where I can further expand my skills and
-                expertise as a Full-Stack Developer.
+                I am a Full-Stack Developer with extensive experience developing
+                and delivering freelance projects independently, showcasing my
+                ability to manage the entire software development lifecycle. I
+                hold a Full-Stack Web Development Certificate and a Bachelor of
+                Music from the University of Toronto, blending technical
+                expertise with a creative mindset. My eight years as a freelance
+                jazz musician honed my adaptability, quick problem-solving, and
+                collaboration skills, which seamlessly translate into my work in
+                tech. I am passionate about building efficient, scalable systems
+                and have a growing interest in cloud computing. My recent AWS
+                Cloud Practitioner certification reflects my commitment to
+                staying ahead in the ever-evolving tech landscape. I thrive in
+                dynamic, fast-paced environments and am eager to contribute to
+                teams where I can continue to learn, grow, and make meaningful
+                impacts as a Full-Stack Developer.
               </p>
             </div>
           </div>
