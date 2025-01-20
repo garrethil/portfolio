@@ -1,6 +1,7 @@
 import { useState } from "react";
 import projectData from "../assets/data";
 import Project from "../components/Project";
+import Resume from "../components/Resume";
 
 export default function Portfolio() {
   const [filter, setFilter] = useState("All");
@@ -12,17 +13,16 @@ export default function Portfolio() {
       : projectData.filter((project) => project.type === filter);
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 mt-10 text-content">
+      <Resume />
       {/* Filter Section */}
       <div className="mb-6 flex justify-center">
         {["All", "Full Stack", "Frontend", "Backend"].map((category) => (
           <button
             key={category}
-            className={`px-4 py-2 mx-2 rounded-lg ${
-              filter === category
-                ? "bg-orange-600 text-white"
-                : "bg-gray-200 text-gray-800"
-            } hover:bg-orange-500`}
+            className={`px-4 py-2 mx-2 rounded-lg transition-transform transform duration-400 ${
+              filter === category ? "bg-primary-text" : "bg-primary"
+            } hover:-translate-y-1`}
             onClick={() => setFilter(category)}
           >
             {category}
@@ -49,11 +49,11 @@ export default function Portfolio() {
       </div>
 
       {/* GitHub Trophies Section */}
-      <div className="mt-6">
-        <h2 className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-semibold text-center p-4 mb-5">
+      <div className="mt-10">
+        <h2 className="font-serif text-content text-xl sm:text-2xl lg:text-3xl font-semibold text-center p-4 mb-5">
           GitHub Achievements
         </h2>
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex flex-wrap justify-center gap-6 mb-[100px]">
           <img
             src="https://github-profile-trophy.vercel.app/?username=garrethil&column=4"
             alt="GitHub Trophies"

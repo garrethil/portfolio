@@ -1,28 +1,28 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: "class",
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class", // Enables dark mode support
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"], // Specify files to scan for class usage
   theme: {
     extend: {
       borderWidth: {
-        1: "1px", // Ensure '1' is defined for 1px border width
+        1: "1px", // 1px border width
       },
       colors: {
         primary: {
-          DEFAULT: "#1C1C1C", // Dark Header and Footer Background for strong contrast
-          text: "#F5F5F5", // Light Header and Footer Text for maximum clarity
+          DEFAULT: "#17241a", // Dark green background
+          text: "#4a6550", // Light green text
         },
         content: {
-          DEFAULT: "#F0F0F0", // Light Gray Main Page Background for minimal color distraction
-          text: "#333333", // Dark Gray Main Content Text for excellent readability
+          DEFAULT: "#cbdccf", // Light gray for sections like Music
+          text: "#4F4F4F", // Dark gray text for readability
         },
         highlight: {
-          DEFAULT: "#FFD700", // Gold color for highlighted elements
+          DEFAULT: "#5364ff", // Blue for buttons, links, and accents
+          hover: "#808080", // Darker gray for hover states
         },
       },
-      fontFamily: {
-        sans: ["Exo 2", "sans-serif"],
-        serif: ["Gowun Batang", "sans-serif"],
+      spacing: {
+        "header-height": "4rem", // Add custom height for header if needed
       },
     },
   },

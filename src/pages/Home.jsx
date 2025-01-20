@@ -1,111 +1,77 @@
-import { useState } from "react";
-import Resume from "../components/Resume";
-import Portfolio from "../components/Portfolio";
-
 function Home() {
-  const headshot = "headshot.webp";
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleOpenModal = () => setIsModalOpen(true);
-  const handleCloseModal = () => setIsModalOpen(false);
-
   return (
-    <div className="w-full flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 lg:px-10">
-      {/* Image container */}
-      <img
-        src={headshot}
-        alt="Profile Picture"
-        className="w-full lg:w-[80%] max-w-lg h-auto rounded-full object-cover shadow-lg my-4"
-      />
-      {/* Title */}
-      <h2 className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-bold py-3 mb-4">
-        Garret Hildebrandt
-      </h2>
-      {/* About Me Button */}
-      <button
-        className="bg-primary text-base sm:text-lg md:text-xl text-primary-text hover:bg-orange-700 transition duration-300 py-2 px-4 rounded w-full md:w-auto text-center"
-        onClick={handleOpenModal}
-        name="open bio"
-      >
-        About Me
-      </button>
-
-      {/* Modal */}
-      {isModalOpen && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 h-screen"
-          onClick={handleCloseModal} // Close modal when clicking outside the content
-        >
-          <div
-            className="bg-white p-6 rounded-lg w-full max-w-lg mx-auto relative"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
-              onClick={handleCloseModal}
-            >
-              ✕
-            </button>
-            <div className="flex flex-col items-center text-start">
-              {/* Bio Content */}
-              <h2 className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-bold mb-4">
-                Garret Hildebrandt
-              </h2>
-              <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
-                I am a Full-Stack Developer with extensive experience developing
-                and delivering freelance projects independently, showcasing my
-                ability to manage the entire software development lifecycle. I
-                hold a Full-Stack Web Development Certificate and a Bachelor of
-                Music from the University of Toronto, blending technical
-                expertise with a creative mindset. My eight years as a freelance
-                jazz musician honed my adaptability, quick problem-solving, and
-                collaboration skills, which seamlessly translate into my work in
-                tech. I am passionate about building efficient, scalable systems
-                and have a growing interest in cloud computing. My recent AWS
-                Cloud Practitioner certification reflects my commitment to
-                staying ahead in the ever-evolving tech landscape. I thrive in
-                dynamic, fast-paced environments and am eager to contribute to
-                teams where I can continue to learn, grow, and make meaningful
-                impacts as a Full-Stack Developer.
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Resume Section */}
-      <div className="w-full lg:w-[80%] max-w-screen-lg flex justify-center items-center">
-        <Resume />
-      </div>
-
-      {/* Projects Section */}
-      <h2
-        id="projects"
-        className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-semibold text-center pt-4"
-      >
-        Projects
-      </h2>
-      <div className="w-full max-w-screen flex justify-center items-center p-2 sm:p-4 lg:p-6">
-        <Portfolio />
-      </div>
-
-      {/* Contact Section */}
-      <div
-        id="contact"
-        className="w-full lg:w-[80%] h-[400px] sm:h-[450px] lg:h-[500px] max-w-screen-lg flex flex-col items-center justify-center py-6 sm:py-8 lg:py-10 my-6 sm:my-8 lg:my-10"
-      >
-        <h2 className="font-serif text-orange-600 text-xl sm:text-2xl lg:text-3xl font-semibold mb-2 sm:mb-4">
-          Contact Me
-        </h2>
-        <p className="text-base text-base sm:text-lg md:text-xl">
-          Email me at:
+    <div className="w-full bg-primary flex flex-col items-center justify-center h-screen px-4 sm:px-6 md:px-8 lg:px-10">
+      {/* Striking Title */}
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="text-primary-text text-3xl sm:text-4xl lg:text-5xl font-bold text-center tracking-wide">
+          Garret Hildebrandt
+        </h1>
+        <p className="text-content text-lg sm:text-xl lg:text-2xl text-center mt-2">
+          Full Stack Developer. Musician.
         </p>
-        <a
-          href="mailto:garrethildebrandt@gmail.com"
-          className="underline hover:text-orange-600 transition duration-300 text-base sm:text-lg lg:text-xl"
-        >
-          garrethildebrandt@gmail.com
-        </a>
+      </div>
+      <div className="bg-primary p-4 md:p-6 lg:p-8">
+        <ul className="flex justify-center items-center space-x-4 md:space-x-6 lg:space-x-8 mt-4">
+          <li>
+            <a
+              href="https://github.com/garrethil"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=""
+              name="github profile"
+              aria-label="view github profile"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-9 w-9 md:h-11 md:w-11 lg:h-15 lg:w-15 hover:-translate-y-1 duration-800 transition-transform transform"
+                viewBox="-74.4 -120.90175 644.8 725.4105"
+                fill="#85ae8e"
+              >
+                <path d="M165.9 389.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2 .6-2-1.3-4.3-4.3-5.2-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 0C106.1 0 0 105.3 0 244c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5 21.3 0 42.8 2.9 62.8 8.5 0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 449.8 496 354.9 496 244 496 105.3 383.5 0 244.8 0zM97.2 344.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/garret-hildebrandt-6887662b1/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:-translate-y-1 duration-400"
+              name="linkedin profile"
+              aria-label="view linkedin profile"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 md:h-7 md:w-7 lg:h-9 lg:w-9 hover:-translate-y-1 duration-800 transition-transform transform"
+                viewBox="0 0 24 24"
+                fill="#85ae8e"
+              >
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:garrethildebrandt@gmail.com"
+              className=""
+              name="email"
+              aria-label="send email"
+            >
+              <svg
+                fill="#85ae8e"
+                className="h-9 w-9 md:h-11 md:w-11 lg:h-15 lg:w-15 hover:-translate-y-1 duration-800 transition-transform transform"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title />
+
+                <g id="mail">
+                  <path d="M29,6H3L2.92,6a.78.78,0,0,0-.21,0l-.17.07a.65.65,0,0,0-.15.1.67.67,0,0,0-.15.14l-.06.06a.36.36,0,0,0,0,.09,1.08,1.08,0,0,0-.08.19A1.29,1.29,0,0,0,2,6.9S2,7,2,7V25a1,1,0,0,0,1,1H29a1,1,0,0,0,1-1V7A1,1,0,0,0,29,6ZM16,14.81,6.2,8H27.09ZM4,24V8.91l11.43,7.91,0,0a1.51,1.51,0,0,0,.18.09l.08,0A1.09,1.09,0,0,0,16,17h0a1,1,0,0,0,.41-.1l.07,0,0,0L28,9.79V24Z" />
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   );

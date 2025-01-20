@@ -1,84 +1,48 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleScrollToSection = (e, sectionId) => {
-    e.preventDefault(); // Prevent the default anchor link behavior
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" }); // Scroll to the section smoothly
-    }
-    setIsOpen(false); // Close the mobile menu after navigating
-  };
+  const [activeSection, setActiveSection] = useState("home");
 
   return (
-    // Apply font-sans to the header or globally
-    <header className="bg-primary text-primary-text font-sans relative">
-      <div className="container mx-auto flex justify-between items-center p-5 md:p-8 lg:p-10">
-        <div className="font-serif text-2xl lg:text-[35px] items-center justify-center">
-          Garret Hildebrandt {/* Apply font-serif only to this span */}
-          <span className="text-orange-600 hidden lg:inline font-semibold ml-3">
-            - Full-Stack Developer
-          </span>
-        </div>
-        <nav className="hidden text-[20px] lg:text-[30px] md:flex space-x-4">
-          <a
-            href="#projects"
-            onClick={(e) => handleScrollToSection(e, "projects")}
-            className="hover:underline hover:cursor-pointer"
+    <header className="bg-primary text-primary-text fixed top-0 left-0 w-full z-50">
+      <div className="container mx-auto py-4 px-6 flex justify-center items-center">
+        {/* Navigation Buttons */}
+        <nav className="flex space-x-4 text-xl">
+          {/* Home Link */}
+          <Link
+            to="/"
+            className={`px-4 py-2 rounded-lg transition-transform transform ${
+              activeSection === "home" ? "bg-primary-text" : "bg-primary"
+            } text-content hover:-translate-y-1 duration-400`}
+            onClick={() => setActiveSection("home")}
+          >
+            Home
+          </Link>
+
+          {/* Music Link */}
+          <Link
+            to="/music"
+            className={`px-4 py-2 rounded-lg transition-transform transform ${
+              activeSection === "music" ? "bg-primary-text" : "bg-primary"
+            } text-content hover:-translate-y-1 duration-400`}
+            onClick={() => setActiveSection("music")}
+          >
+            Music
+          </Link>
+
+          {/* Projects Link */}
+          <Link
+            to="/projects"
+            className={`px-4 py-2 rounded-lg transition-transform transform ${
+              activeSection === "projects" ? "bg-primary-text" : "bg-primary"
+            } text-content hover:-translate-y-1 duration-400`}
+            onClick={() => setActiveSection("projects")}
           >
             Projects
-          </a>
-          <a
-            href="#contact"
-            onClick={(e) => handleScrollToSection(e, "contact")}
-            className="hover:underline hover:cursor-pointer"
-          >
-            Contact
-          </a>
+          </Link>
         </nav>
-        <div className="md:hidden">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="focus:outline-none"
-            name="navbar"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
-              ></path>
-            </svg>
-          </button>
-        </div>
       </div>
-      {isOpen && (
-        <nav className="md:hidden bg-primary text-primary-text p-5 space-y-4 absolute top-full left-0 w-full z-20">
-          <a
-            href="#projects"
-            onClick={(e) => handleScrollToSection(e, "projects")}
-            className="block hover:border-dashed cursor-pointer"
-          >
-            Projects
-          </a>
-          <a
-            href="#contact"
-            onClick={(e) => handleScrollToSection(e, "contact")}
-            className="block hover:border-dashed cursor-pointer"
-          >
-            Contact
-          </a>
-        </nav>
-      )}
     </header>
   );
 };

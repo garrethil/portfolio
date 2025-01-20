@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 function Project({ title, image, alt, desc, tech, repo, link, depl }) {
   return (
-    <div className="project-card bg-white shadow-md rounded-lg p-4 relative group overflow-hidden">
+    <div className="project-card border border-primary-text rounded-md p-4 relative group overflow-hidden hover:-translate-y-1 duration-400 transition-transform transform">
       {/* Deployment Status */}
       <div className="absolute top-2 right-2 text-sm font-bold flex items-center space-x-1">
         {depl ? (
@@ -38,7 +38,7 @@ function Project({ title, image, alt, desc, tech, repo, link, depl }) {
         <img
           src={image}
           alt={alt}
-          className="w-full h-auto mt-2 rounded transition-transform duration-300 group-hover:scale-105"
+          className="w-full h-auto mt-2 rounded transition-transform duration-300"
         />
         {/* Description Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -53,16 +53,16 @@ function Project({ title, image, alt, desc, tech, repo, link, depl }) {
           href={repo}
           target="_blank"
           rel="noopener noreferrer"
-          className="underline hover:text-orange-600"
+          className="underline hover:text-highlight"
         >
           GitHub Repo
         </a>
-        <span className="border-l border-gray-400 h-6"></span>
+        <span className="border-l h-6"></span>
         <a
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="underline hover:text-orange-600"
+          className="underline hover:text-highlight"
         >
           {depl ? "Project Link" : "Demo Video"}
         </a>
