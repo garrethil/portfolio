@@ -21,6 +21,9 @@ export default {
           hover: "#808080", // Darker gray for hover states
         },
       },
+      fontFamily: {
+        mono: ["'Roboto Mono'", "monospace"], // Add Roboto Mono as a custom font
+      },
       spacing: {
         "header-height": "4rem", // Add custom height for header if needed
       },

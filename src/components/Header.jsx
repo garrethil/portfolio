@@ -1,8 +1,21 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
-  const [activeSection, setActiveSection] = useState("home");
+  const location = useLocation(); // Get the current URL location
+  const [activeSection, setActiveSection] = useState("");
+
+  // Update the active section based on the current path
+  useEffect(() => {
+    const path = location.pathname;
+    if (path === "/") {
+      setActiveSection("home");
+    } else if (path === "/music") {
+      setActiveSection("music");
+    } else if (path === "/projects") {
+      setActiveSection("projects");
+    }
+  }, [location.pathname]);
 
   return (
     <header className="bg-primary text-primary-text fixed top-0 left-0 w-full z-50">

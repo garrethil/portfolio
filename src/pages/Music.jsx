@@ -5,24 +5,43 @@ export default function MusicBioPage() {
     <div className="container mx-auto p-6 text-content mt-8">
       {/* Bio Section */}
       <div className="my-8 mt-10 text-center">
-        <p className="text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto">
-          Since 2017, I have been performing as a saxophonist in the Toronto
-          area, performing at renowned venues such as Koerner Hall, Drome
-          Taberna, and The Rex Hotel. As a multi-instrumentalist, I have honed
-          my skills on saxophone and clarinet and I am self taught on guitar,
-          flute and piano bringing versatility and depth to my music. In 2019, I
-          began exploring the guitar, and by 2020, I was writing and recording
-          my own original songs. My journey is rooted in the vibrant Toronto
-          music community, where I earned a bachelor’s degree in jazz
-          performance for saxophone. This foundation has allowed me to blend my
-          passion for improvisation with songwriting, creating a unique musical
-          voice.
+        <div className="flex flex-col items-center">
+          <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-94 md:h-94 rounded-sm  mb-8">
+            <img
+              src="/music.webp"
+              alt="Jazz Quartet"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+        <p className="text-lg sm:text-xl leading-relaxed max-w-4xl mx-auto mb-[150px]">
+          Since 2017, I have established myself as a dedicated and versatile
+          saxophonist in the vibrant Toronto music scene, performing at
+          prestigious venues such as Koerner Hall, DROM Taberna, and The Rex
+          Hotel. As a multi-instrumentalist, I have cultivated expertise on the
+          saxophone and clarinet while also expanding my repertoire as a
+          self-taught guitarist, flutist, and pianist. This breadth of musical
+          experience has enriched my artistry, adding depth and versatility to
+          my performances.
+          <br />
+          <br />
+          In 2019, I began exploring the guitar as a creative outlet, which led
+          to writing and recording original compositions by 2020. My journey as
+          a musician is deeply intertwined with Toronto's thriving music
+          community, where I earned a bachelor’s degree in jazz performance for
+          saxophone.
+          <br />
+          <br />
+          Although my current focus lies in transitioning into the tech
+          industry, my commitment to music remains unwavering. I continue to
+          embrace opportunities to perform and collaborate, honoring the
+          creative spirit that has guided my career thus far.
         </p>
       </div>
 
       {/* SoundCloud Section */}
       <div className="my-8">
-        <h2 className="text-2xl sm:text-3xl font-semibold mb-6 text-center">
+        <h2 className="text-2xl sm:text-3xl font-semibold my-6 text-center underline">
           Original Music
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6">
@@ -52,8 +71,8 @@ export default function MusicBioPage() {
       </div>
 
       {/* YouTube Section */}
-      <div className="my-8">
-        <h2 className="text-2xl sm:text-3xl font-semibold mb-6 text-center">
+      <div className="my-8 mb-[200px]">
+        <h2 className="text-content text-2xl sm:text-3xl font-semibold mb-6 text-center underline">
           Jazz Music
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6">

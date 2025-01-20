@@ -50,7 +50,7 @@ export default function Portfolio() {
 
       {/* GitHub Trophies Section */}
       <div className="mt-10">
-        <h2 className="font-serif text-content text-xl sm:text-2xl lg:text-3xl font-semibold text-center p-4 mb-5">
+        <h2 className="text-content text-xl sm:text-2xl lg:text-3xl font-semibold text-center p-4 mb-5">
           GitHub Achievements
         </h2>
         <div className="flex flex-wrap justify-center gap-6 mb-[100px]">
