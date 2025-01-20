@@ -13,11 +13,11 @@ export default function MusicBioPage() {
       {/* Bio Section */}
       <div className="my-8 mt-10 text-center">
         <div className="flex flex-col items-center">
-          <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-94 md:h-94 rounded-sm  mb-8">
+          <div className="w-194 md:h-194 rounded-sm  mb-8">
             <img
               src="/music.webp"
               alt="Jazz Quartet"
-              className="w-full h-full object-cover"
+              className="flex sm:w-3/4 sm:w-1/2 md:w-1/2 md:h-1/3 mx-auto"
             />
           </div>
         </div>
