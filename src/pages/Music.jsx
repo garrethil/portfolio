@@ -48,7 +48,7 @@ export default function MusicBioPage() {
 
       {/* SoundCloud Section */}
       <div className="my-8">
-        <h2 className="text-primary-text text-2xl sm:text-3xl font-semibold my-6 text-center underline">
+        <h2 className="text-2xl sm:text-3xl font-semibold my-6 text-center underline">
           Original Music
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6">
@@ -79,7 +79,7 @@ export default function MusicBioPage() {
 
       {/* YouTube Section */}
       <div className="my-8 mb-[200px]">
-        <h2 className="text-primary-text text-2xl sm:text-3xl font-semibold mb-6 text-center underline">
+        <h2 className="text-2xl sm:text-3xl font-semibold mb-6 text-center underline">
           Jazz
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6">
