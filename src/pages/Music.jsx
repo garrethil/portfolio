@@ -40,9 +40,8 @@ export default function MusicBioPage() {
           <br />
           <br />
           Although my current focus lies in transitioning into the tech
-          industry, my commitment to music remains unwavering. I continue to
-          embrace opportunities to perform and collaborate, honoring the
-          creative spirit that has guided my career thus far.
+          industry, my commitment to music remains - I continue to embrace
+          opportunities to perform and collaborate.
         </p>
       </div>
 
