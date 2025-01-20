@@ -14,6 +14,12 @@ export default function Portfolio() {
 
   return (
     <div className="container mx-auto p-4 mt-10 text-content">
+      <div className="mb-8">
+        <h1 className="text-xl sm:text-3xl font-semibold text-primary-text my-4">
+          Projects
+        </h1>
+        <div className="w-full h-1 bg-primary-text"></div>
+      </div>
       <Resume />
       {/* Filter Section */}
       <div className="mb-6 flex justify-center">

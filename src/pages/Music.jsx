@@ -3,6 +3,13 @@ import ReactPlayer from "react-player";
 export default function MusicBioPage() {
   return (
     <div className="container mx-auto p-6 text-content mt-8">
+      {/* Page Title */}
+      <div className="mb-8">
+        <h1 className="text-xl sm:text-3xl font-semibold text-primary-text my-4">
+          Music
+        </h1>
+        <div className="w-full h-1 bg-primary-text"></div>
+      </div>
       {/* Bio Section */}
       <div className="my-8 mt-10 text-center">
         <div className="flex flex-col items-center">
@@ -41,7 +48,7 @@ export default function MusicBioPage() {
 
       {/* SoundCloud Section */}
       <div className="my-8">
-        <h2 className="text-2xl sm:text-3xl font-semibold my-6 text-center underline">
+        <h2 className="text-primary-text text-2xl sm:text-3xl font-semibold my-6 text-center underline">
           Original Music
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6">
@@ -72,8 +79,8 @@ export default function MusicBioPage() {
 
       {/* YouTube Section */}
       <div className="my-8 mb-[200px]">
-        <h2 className="text-content text-2xl sm:text-3xl font-semibold mb-6 text-center underline">
-          Jazz Music
+        <h2 className="text-primary-text text-2xl sm:text-3xl font-semibold mb-6 text-center underline">
+          Jazz
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6">
           {/* First YouTube Video */}

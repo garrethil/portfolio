@@ -23,7 +23,7 @@ function Home() {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-9 w-9 md:h-11 md:w-11 lg:h-15 lg:w-15 hover:-translate-y-1 duration-800 transition-transform transform"
+                className="h-10 w-10 md:h-12 md:w-12 lg:h-16 lg:w-16 hover:-translate-y-1 duration-800 transition-transform transform"
                 viewBox="-74.4 -120.90175 644.8 725.4105"
                 fill="#85ae8e"
               >
