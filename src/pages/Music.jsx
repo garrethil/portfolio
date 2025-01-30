@@ -2,26 +2,37 @@ import ReactPlayer from "react-player";
 
 export default function MusicBioPage() {
   return (
-    <div className="container mx-auto p-6 text-content mt-8">
+    <main className="container mx-auto p-6 text-content mt-8">
       {/* Page Title */}
-      <div className="mb-8">
+      <header className="mb-8">
         <h1 className="text-xl sm:text-3xl font-semibold text-primary-text my-4">
           Music
         </h1>
         <div className="w-full h-1 bg-primary-text"></div>
-      </div>
+      </header>
+
       {/* Bio Section */}
-      <div className="my-8 mt-10 text-center">
+      <section
+        className="my-8 mt-10 text-center"
+        role="region"
+        aria-labelledby="bio-heading"
+      >
+        <h2 id="bio-heading" className="sr-only">
+          Music Biography
+        </h2>
         <div className="flex flex-col items-center">
-          <div className="w-194 md:h-194 rounded-sm  mb-8">
+          <figure className="mb-8">
             <img
               src="/music.webp"
-              alt="Jazz Quartet"
-              className="flex sm:w-3/4 sm:w-1/2 md:w-1/2 md:h-1/3 mx-auto"
+              alt="Garret Hildebrandt performing in a jazz quartet at a venue."
+              className="w-3/4 sm:w-1/2 md:w-1/2 md:h-auto mx-auto rounded-sm"
             />
-          </div>
+            <figcaption className="sr-only">
+              A jazz quartet featuring Garret Hildebrandt performing live.
+            </figcaption>
+          </figure>
         </div>
-        <p className="text-lg sm:text-xl leading-relaxed max-w-4xl mx-auto mb-[150px]">
+        <p className="text-lg sm:text-xl leading-relaxed max-w-4xl mx-auto mb-24">
           Since 2017, I have established myself as a dedicated and versatile
           saxophonist in the vibrant Toronto music scene, performing at
           prestigious venues such as Koerner Hall, DROM Taberna, and The Rex
@@ -43,59 +54,81 @@ export default function MusicBioPage() {
           industry, my commitment to music remains - I continue to embrace
           opportunities to perform and collaborate.
         </p>
-      </div>
+      </section>
 
       {/* SoundCloud Section */}
-      <div className="my-8">
-        <h2 className="text-2xl sm:text-3xl font-semibold my-6 text-center underline">
+      <section
+        className="my-8"
+        role="region"
+        aria-labelledby="original-music-heading"
+      >
+        <h2
+          id="original-music-heading"
+          className="text-2xl sm:text-3xl font-semibold my-6 text-center underline"
+        >
           Original Music
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6">
           {/* First SoundCloud Embed */}
-          <ReactPlayer
-            url="https://soundcloud.com/user-849568025/tossed"
-            width="100%"
-            height="166px"
-            config={{
-              soundcloud: {
-                options: { auto_play: false },
-              },
-            }}
-          />
+          <div className="w-full max-w-md" aria-label="SoundCloud player">
+            <ReactPlayer
+              url="https://soundcloud.com/user-849568025/tossed"
+              width="100%"
+              height="166px"
+              config={{
+                soundcloud: { options: { auto_play: false } },
+              }}
+              title="SoundCloud audio: Tossed"
+            />
+          </div>
           {/* Second SoundCloud Embed */}
-          <ReactPlayer
-            url="https://soundcloud.com/user-849568025/without-any-meaning"
-            width="100%"
-            height="166px"
-            config={{
-              soundcloud: {
-                options: { auto_play: false },
-              },
-            }}
-          />
+          <div className="w-full max-w-md" aria-label="SoundCloud player">
+            <ReactPlayer
+              url="https://soundcloud.com/user-849568025/without-any-meaning"
+              width="100%"
+              height="166px"
+              config={{
+                soundcloud: { options: { auto_play: false } },
+              }}
+              title="SoundCloud audio: Without Any Meaning"
+            />
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* YouTube Section */}
-      <div className="my-8 mb-[200px]">
-        <h2 className="text-2xl sm:text-3xl font-semibold mb-6 text-center underline">
+      <section
+        className="my-8 mb-36"
+        role="region"
+        aria-labelledby="jazz-heading"
+      >
+        <h2
+          id="jazz-heading"
+          className="text-2xl sm:text-3xl font-semibold mb-6 text-center underline"
+        >
           Jazz
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center gap-6">
           {/* First YouTube Video */}
-          <ReactPlayer
-            url="https://www.youtube.com/watch?v=ALQD33KLDlE&ab_channel=MusicWithoutborders"
-            width="100%"
-            height="360px"
-          />
+          <div className="w-full max-w-lg">
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=ALQD33KLDlE&ab_channel=MusicWithoutborders"
+              width="100%"
+              height="360px"
+              title="YouTube video: Jazz performance by Music Without Borders"
+            />
+          </div>
           {/* Second YouTube Video */}
-          <ReactPlayer
-            url="https://www.youtube.com/watch?v=zul9YQ6p9rY&ab_channel=ChristianAntonacci"
-            width="100%"
-            height="360px"
-          />
+          <div className="w-full max-w-lg">
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=zul9YQ6p9rY&ab_channel=ChristianAntonacci"
+              width="100%"
+              height="360px"
+              title="YouTube video: Jazz performance by Christian Antonacci"
+            />
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
