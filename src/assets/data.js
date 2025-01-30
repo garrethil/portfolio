@@ -4,7 +4,7 @@ const projectData = [
     image: "project-images/wave-chopper.png",
     alt: "Wave-file effects processor",
     tech: "MERN, AWS S3, TypeScript, Tailwind, Vite",
-    desc: "users to upload, process, and manipulate WAV files with audio effects like reversal and jumbling. It leverages AWS S3 for scalable file storage, wav-encoder and waveFile for decoding/encoding, and JWT authentication with MongoDB for user management.",
+    desc: "Users may upload, process, and manipulate WAV files with audio effects like reversal and jumbling. It leverages AWS S3 for scalable file storage, wav-encoder and waveFile for decoding/encoding, and JWT authentication with MongoDB for user management.",
     repo: "https://github.com/garrethil/waveChopper",
     link: "https://wave-chopper-2dc5d4458dd7.herokuapp.com/",
     depl: true,
