@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function Project({ title, image, alt, desc, tech, repo, link, depl }) {
+function Project({ title, image, alt, desc, tech, repo, link, depl, vid }) {
   return (
     <div className="project-card border border-primary-text rounded-md p-4 relative group overflow-hidden hover:-translate-y-1 duration-400 transition-transform transform">
       {/* Deployment Status */}
@@ -64,7 +64,7 @@ function Project({ title, image, alt, desc, tech, repo, link, depl }) {
           rel="noopener noreferrer"
           className="underline hover:text-highlight"
         >
-          {depl ? "Project Link" : "Demo Video"}
+          {vid ? "Demo Video" : "Project Link"}
         </a>
       </div>
 
@@ -84,6 +84,7 @@ Project.propTypes = {
   repo: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   depl: PropTypes.bool,
+  vid: PropTypes.bool,
 };
 
 export default Project;

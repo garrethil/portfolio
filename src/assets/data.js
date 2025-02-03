@@ -6,8 +6,9 @@ const projectData = [
     tech: "MERN, AWS S3, TypeScript, Tailwind, Vite",
     desc: "Users may upload, process, and manipulate WAV files with audio effects like reversal and jumbling. It leverages AWS S3 for scalable file storage, wav-encoder and waveFile for decoding/encoding, and JWT authentication with MongoDB for user management.",
     repo: "https://github.com/garrethil/waveChopper",
-    link: "https://wave-chopper-2dc5d4458dd7.herokuapp.com/",
+    link: "https://www.youtube.com/watch?v=j3HWg1l8v-o&ab_channel=GarretHildebrandt",
     depl: true,
+    vid: true,
     type: "Full Stack",
   },
   {
@@ -19,6 +20,7 @@ const projectData = [
     repo: "https://github.com/topcowmoo/areca-vestiaria",
     link: "https://areca-vestiaria-test.onrender.com/",
     depl: true,
+    vid: false,
     type: "Frontend",
   },
   {
@@ -30,6 +32,7 @@ const projectData = [
     repo: "https://github.com/garrethil/render-file",
     link: "https://www.renderfile.com/",
     depl: true,
+    vid: false,
     type: "Full Stack",
   },
   {
@@ -41,6 +44,7 @@ const projectData = [
     repo: "https://github.com/garrethil/CSawards",
     link: "https://randoawards.netlify.app/",
     depl: true,
+    vid: false,
     type: "Frontend",
   },
   {
@@ -52,6 +56,7 @@ const projectData = [
     repo: "https://github.com/Jason897571/Meal-Map",
     link: "https://meal-map.onrender.com/",
     depl: true,
+    vid: false,
     type: "Full Stack",
   },
   {
@@ -63,6 +68,7 @@ const projectData = [
     repo: "https://github.com/garrethil/SN-API?tab=readme-ov-file",
     link: "https://drive.google.com/file/d/1Dw2tO6ijhbl1MsZ1AAdijnUMkAqlsB7g/view",
     depl: false,
+    vid: true,
     type: "Backend",
   },
   {
@@ -74,6 +80,7 @@ const projectData = [
     repo: "https://github.com/garrethil/ecommBackEnd",
     link: "https://drive.google.com/file/d/1eP9Ap23-6LexJnBa5eYURnFnKmf5K0il/view",
     depl: false,
+    vid: true,
     type: "Backend",
   },
 ];
