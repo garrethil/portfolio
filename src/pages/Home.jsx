@@ -1,4 +1,4 @@
-const resumePath = "/hildebrandt.25.pdf";
+const resumePath = "/g.hildebrandt-2025.pdf";
 
 function Home() {
   return (
