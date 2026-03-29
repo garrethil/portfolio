@@ -1,4 +1,5 @@
 import {
+  FaAngular,
   FaHtml5,
   FaCss3Alt,
   FaJsSquare,
@@ -8,6 +9,7 @@ import {
   FaGitAlt,
 } from "react-icons/fa";
 import {
+  SiDocker,
   SiTailwindcss,
   SiMongodb,
   SiMysql,
@@ -30,8 +32,10 @@ export default function Resume() {
             <FaCss3Alt title="CSS3" className="text-blue-500" />
             <FaJsSquare title="JavaScript" className="text-yellow-500" />
             <FaReact title="React" className="text-blue-400" />
+            <FaAngular title="Angular" className="text-red-500" />
             <SiTailwindcss title="Tailwind CSS" className="text-teal-400" />
             <FaNodeJs title="Node.js" className="text-green-500" />
+            <SiDocker title="Docker" className="text-blue-500" />
             <SiGraphql title="GraphQL" className="text-pink-500" />
             <SiMongodb title="MongoDB" className="text-green-400" />
             <SiMysql title="MySQL" className="text-blue-700" />

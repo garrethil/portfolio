@@ -3,27 +3,6 @@ import projectData from "../assets/data";
 import Project from "../components/Project";
 import Resume from "../components/Resume";
 
-const githubHighlights = [
-  {
-    title: "Pull Shark x2",
-    detail: "Merged pull requests across collaborative work and personal projects.",
-  },
-  {
-    title: "Quickdraw",
-    detail: "Resolved issues quickly after opening them on GitHub.",
-  },
-  {
-    title: "YOLO",
-    detail: "Shipped directly and iterated fast while building in public.",
-  },
-];
-
-const githubStats = [
-  { label: "Public repos", value: "41" },
-  { label: "Pinned projects", value: "4" },
-  { label: "Portfolio repo", value: "Live" },
-];
-
 export default function Portfolio() {
   const [filter, setFilter] = useState("All");
 
@@ -76,63 +55,24 @@ export default function Portfolio() {
         ))}
       </div>
 
-      <section className="mt-14 mb-[100px] rounded-2xl border border-primary-text/30 bg-gradient-to-br from-primary/90 via-primary to-primary-text/20 p-6 sm:p-8">
-        <div className="flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
-          <div className="max-w-2xl">
-            <p className="mb-3 text-sm uppercase tracking-[0.25em] text-primary-text">
-              GitHub Highlights
+      <section className="mt-14 mb-[100px] rounded-xl border border-primary-text/25 bg-primary/40 px-6 py-5 sm:px-8">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="text-sm uppercase tracking-[0.2em] text-primary-text">
+              GitHub
             </p>
-            <h2 className="text-2xl sm:text-3xl font-semibold text-content">
-              Verified achievements without relying on a third-party widget.
-            </h2>
-            <p className="mt-4 text-content/90">
-              This section reflects the achievements shown on the public GitHub
-              profile and keeps the portfolio stable even when embed services
-              are slow or unavailable.
+            <p className="mt-2 text-base sm:text-lg text-content">
+              More builds, repos, and recent work live on my GitHub profile.
             </p>
-
-            <div className="mt-6 grid gap-4 sm:grid-cols-3">
-              {githubStats.map((stat) => (
-                <div
-                  key={stat.label}
-                  className="rounded-xl border border-primary-text/25 bg-black/10 p-4"
-                >
-                  <p className="text-2xl font-bold text-content">{stat.value}</p>
-                  <p className="mt-1 text-sm text-primary-text">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-
-            <a
-              href="https://github.com/garrethil"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-6 inline-block rounded-lg bg-highlight px-5 py-3 text-white transition-colors hover:bg-highlight-hover"
-            >
-              View GitHub Profile
-            </a>
           </div>
-
-          <div className="grid w-full max-w-2xl gap-4">
-            {githubHighlights.map((achievement) => (
-              <article
-                key={achievement.title}
-                className="rounded-xl border border-primary-text/25 bg-content/95 p-5 text-content-text shadow-[0_10px_30px_rgba(0,0,0,0.18)]"
-              >
-                <div className="flex items-center justify-between gap-4">
-                  <h3 className="text-lg font-semibold text-content-text">
-                    {achievement.title}
-                  </h3>
-                  <span className="rounded-full border border-primary-text/30 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary-text">
-                    GitHub
-                  </span>
-                </div>
-                <p className="mt-3 text-sm sm:text-base text-content-text/90">
-                  {achievement.detail}
-                </p>
-              </article>
-            ))}
-          </div>
+          <a
+            href="https://github.com/garrethil"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center rounded-lg border border-primary-text/40 px-5 py-3 text-content transition-colors hover:bg-primary-text hover:text-primary"
+          >
+            View GitHub
+          </a>
         </div>
       </section>
     </div>
