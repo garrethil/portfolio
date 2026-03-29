@@ -26,6 +26,9 @@ export default function MusicBioPage() {
               src="/music.webp"
               alt="Garret Hildebrandt performing in a jazz quartet at a venue."
               className="w-3/4 sm:w-1/2 md:w-1/2 md:h-auto mx-auto rounded-sm"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
             />
             <figcaption className="sr-only">
               A jazz quartet featuring Garret Hildebrandt performing live.
@@ -115,6 +118,7 @@ export default function MusicBioPage() {
               url="https://www.youtube.com/watch?v=ALQD33KLDlE&ab_channel=MusicWithoutborders"
               width="100%"
               height="360px"
+              light
               title="YouTube video: Jazz performance by Music Without Borders"
             />
           </div>
@@ -124,6 +128,7 @@ export default function MusicBioPage() {
               url="https://www.youtube.com/watch?v=zul9YQ6p9rY&ab_channel=ChristianAntonacci"
               width="100%"
               height="360px"
+              light
               title="YouTube video: Jazz performance by Christian Antonacci"
             />
           </div>

@@ -34,11 +34,14 @@ function Project({ title, image, alt, desc, tech, repo, link, depl, vid }) {
       </div>
 
       {/* Image Container with Hover Effect */}
-      <div className="relative overflow-hidden hidden sm:block">
+      <div className="relative hidden overflow-hidden rounded sm:block aspect-[16/10] bg-primary/20">
         <img
           src={image}
           alt={alt}
-          className="w-full h-auto mt-2 rounded transition-transform duration-300"
+          className="h-full w-full object-cover transition-transform duration-300"
+          loading="lazy"
+          decoding="async"
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
         />
         {/* Description Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
