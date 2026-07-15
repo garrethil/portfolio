@@ -19,7 +19,7 @@ import {
 } from "react-icons/si";
 
 export default function Resume() {
-  const resumePath = "/g.hildebrandt-2025.pdf";
+  const resumePath = "/garret.hildebrandt-t-2026.pdf";
 
   return (
     <div className="container mx-auto p-4 my-5">
